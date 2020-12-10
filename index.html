@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RelaxnRetreat</title>
+
+    <script src="jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-image: url('./images/palm-tree.jpg')">
+    <div id="timeSelections">
+      <button class="minutes" id="5" value="05 : 00">5 minutes</button>
+      <button class="minutes" id="10" value="10 : 00">10 minutes</button>
+      <button class="minutes" id="15" value="15 : 00">15 minutes</button>
+    </div>
+
+    <div id="timer">
+      <div id="controls">
+        <!-- <input type="number" class="duration" /> -->
+        <h1 id="display">00 : 00</h1>
+        <div class="buttons">
+          <i id="start" class="fas fa-play"></i>
+          <i id="pause" class="fas fa-pause"></i>
+        </div>
+      </div>
+
+      <svg height="500" width="500" id="svg">
+        <circle
+          cx="250"
+          cy="230"
+          r="200"
+          stroke="#13929e"
+          stroke-width="10"
+          fill="transparent"
+        ></circle>
+      </svg>
+
+      <button id="changeBackground">Change background image</button>
+    </div>
+
+    <div id="soundSelections">
+      <i class="fas fa-cloud-sun-rain">
+        <audio id="rain" loop>
+          <source src="./sounds/rain_on_rooftop.ogg" type="audio/ogg" />
+        </audio>
+      </i>
+      <i class="fas fa-dove">
+        <audio id="bird" loop>
+          <source
+            src="./sounds/jungle_atmosphere_morning.ogg"
+            type="audio/ogg"
+          />
+        </audio>
+      </i>
+      <i class="fas fa-water">
+        <audio id="ocean" loop>
+          <source
+            src="./sounds/waves_crashing_on_rock_beach.ogg"
+            type="audio/ogg"
+          />
+        </audio>
+      </i>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

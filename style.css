@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#timeSelections,
+#soundSelections {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 30vh auto;
+  justify-content: space-around;
+}
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#svg {
+  position: relative;
+}
+#controls {
+  position: absolute;
+  transform: translate(5px, 85px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+h1 {
+  font-size: 100px;
+  color: #fae2ce;
+  margin-bottom: 30px;
+}
+
+.fas {
+  font-size: 50px;
+  color: rgb(240, 240, 240);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-play,
+.fa-pause {
+  /* color: #689a9e; */
+  color: #f1f1f1fb;
+  height: auto;
+  width: auto;
+  border: none;
+  cursor: pointer;
+}
+.fa-play:hover,
+.fa-pause:hover {
+  color: #689a9e;
+}
+.fa-play:active,
+.fa-pause:active {
+  color: #2b5e61;
+}
+.buttons {
+  display: flex;
+}
+#start {
+  margin-right: 30px;
+}
+.minutes {
+  height: 70px;
+  width: 130px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  font-size: 18px;
+  box-shadow: 3px 5px 5px 1px rgb(121, 121, 121);
+  cursor: pointer;
+  border-radius: 7px;
+}
+.minutes:active {
+  outline: none;
+  background-color: rgb(182, 180, 180);
+}
+.minutes:focus {
+  outline: none;
+}
+
+#changeBackground {
+  height: 60px;
+  width: 400px;
+  font-size: 18px;
+  background-color: #006d77;
+  border: none;
+  color: rgb(240, 240, 240);
+  margin-top: 70px;
+}
+#changeBackground:hover {
+  background-color: #83c5be;
+  cursor: pointer;
+  color: rgb(26, 26, 26);
+}
+
+#changeBackground:focus {
+  outline: none;
+  background-color: #006d77;
+  color: rgb(240, 240, 240);
+}
+.fa-cloud-sun-rain {
+  background-color: #975136;
+}
+.fa-dove {
+  background-color: #cc6f4a;
+}
+.fa-water {
+  background-color: #e2a48c;
+}
+.fa-water,
+.fa-dove,
+.fa-cloud-sun-rain {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 3px 5px 5px 1px rgb(121, 121, 121);
+}
+.fa-water:hover,
+.fa-dove:hover,
+.fa-cloud-sun-rain:hover,
+.minutes:hover {
+  box-shadow: 5px 7px 5px 2px rgb(121, 121, 121);
+}
