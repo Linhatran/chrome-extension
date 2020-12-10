@@ -76,16 +76,18 @@ h1 {
   background-color: rgb(240, 240, 240);
   border: none;
   font-size: 18px;
-  box-shadow: 3px 5px 5px 1px rgb(121, 121, 121);
   cursor: pointer;
   border-radius: 7px;
+  box-shadow: 5px 7px 5px 2px rgb(121, 121, 121);
 }
-.minutes:active {
+.minutes:active,
+.minutes:hover {
   outline: none;
   background-color: rgb(182, 180, 180);
 }
 .minutes:focus {
   outline: none;
+  background-color: rgb(158, 157, 157);
 }
 
 #changeBackground {
@@ -96,6 +98,8 @@ h1 {
   border: none;
   color: rgb(240, 240, 240);
   margin-top: 70px;
+  border-radius: 7px;
+  box-shadow: 5px 7px 5px 2px rgb(121, 121, 121);
 }
 #changeBackground:hover {
   background-color: #83c5be;
@@ -122,11 +126,12 @@ h1 {
 .fa-cloud-sun-rain {
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 3px 5px 5px 1px rgb(121, 121, 121);
+  box-shadow: 5px 7px 5px 2px rgb(121, 121, 121);
 }
 .fa-water:hover,
 .fa-dove:hover,
 .fa-cloud-sun-rain:hover,
-.minutes:hover {
-  box-shadow: 5px 7px 5px 2px rgb(121, 121, 121);
+.minutes:hover,
+#changeBackground {
+  box-shadow: 3px 5px 5px 1px rgb(121, 121, 121);
 }
